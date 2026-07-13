@@ -1,0 +1,11 @@
+type: CellLiquid
+name: "[lime]Кислота"
+gasColor: "4df53e"
+color: "45e430"
+colorTo: "20701b"
+heatCapacity: 0.1
+explosiveness: 0
+flammability: 0
+temperature: 0.5
+viscosity: 0.75
+effect: acid-poison
