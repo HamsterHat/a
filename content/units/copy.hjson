@@ -1,0 +1,205 @@
+type: mech
+name: "[sky]<<COPIED>>"
+alwaysUnlocked: true
+armor: 9
+outlines: false
+health: 99
+range: 8
+rotateMoveFirst: false
+rotateSpeed: 3
+hitSize: 8
+canDrown: false
+stepShake: 0
+
+
+isEnemy: true
+accel: 0.2
+drag: 0.1
+speed: 0.4
+drawCell: false
+
+
+
+
+
+
+
+immunities: [burning, melting, mod-melt, mod-gorenie]
+
+
+
+abilities: [
+        {
+type: EnergyFieldAbility
+damage: 0
+reload: 1
+range: 24
+healEffect: none
+hitEffect: none	
+damageEffect: none
+status: h4ck3d
+shootSound: none
+statusDuration: 30
+maxTargets: 999999
+healPercent: 0
+sameTypeHealMult: 0
+displayHeal: false
+blinkScl: 0
+blinkSize: 0
+effectRadius: 0
+sectorRad: 0
+rotateSpeed: 0
+sectors: 0	
+color: 310606
+useAmmo: false
+}
+{
+	type: MoveEffectAbility
+	effect: {
+        type: MultiEffect
+        effects: [ 
+                {
+                type: ParticleEffect
+                particles: 3
+                region: c00l-one
+                lifetime: 35
+                length: 8
+                sizeFrom: 0
+                sizeTo: 2
+                colorFrom: 00ff73
+                colorTo: 00d9ff00
+                spin: 2
+                }
+                {
+                type: ParticleEffect
+                particles: 3
+                region: c00l-zero
+                lifetime: 35
+                length: 8
+                sizeFrom: 0
+                sizeTo: 2
+                colorFrom: 00ff73
+                colorTo: 00d9ff00
+                spin: 2
+                }
+                {
+                type: ParticleEffect
+                particles: 3
+                region: c00l-o
+                lifetime: 35
+                length: 8
+                sizeFrom: 0
+                sizeTo: 2
+                colorFrom: 00ff73
+                colorTo: 00d9ff00
+                spin: 2
+                }
+                {
+                type: ParticleEffect
+                particles: 3
+                region: c00l-c
+                lifetime: 35
+                length: 8
+                sizeFrom: 0
+                sizeTo: 2
+                colorFrom: 00ff73
+                colorTo: 00d9ff00
+                spin: 2
+                }
+                {
+                type: ParticleEffect
+                particles: 3
+                region: c00l-t
+                lifetime: 35
+                length: 8
+                sizeFrom: 0
+                sizeTo: 2
+                colorFrom: 00ff73
+                colorTo: 00d9ff00
+                spin: 2
+                }
+                {
+                type: ParticleEffect
+                particles: 3
+                region: c00l-p
+                lifetime: 35
+                length: 8
+                sizeFrom: 0
+                sizeTo: 2
+                colorFrom: 00ff73
+                colorTo: 00d9ff00
+                spin: 2
+                }
+                {
+                type: ParticleEffect
+                particles: 3
+                region: c00l-u
+                lifetime: 35
+                length: 8
+                sizeFrom: 0
+                sizeTo: 2
+                colorFrom: 00ff73
+                colorTo: 00d9ff00
+                spin: 2
+                }
+                {
+                type: ParticleEffect
+                particles: 3
+                region: c00l-s
+                lifetime: 35
+                length: 8
+                sizeFrom: 0
+                sizeTo: 2
+                colorFrom: 00ff73
+                colorTo: 00d9ff00
+                spin: 2
+                }
+                {
+                type: ParticleEffect
+                particles: 3
+                region: c00l-i
+                lifetime: 35
+                length: 8
+                sizeFrom: 0
+                sizeTo: 2
+                colorFrom: 00ff73
+                colorTo: 00d9ff00
+                spin: 2
+                }
+                {
+                type: ParticleEffect
+                particles: 3
+                region: c00l-g
+                lifetime: 35
+                length: 8
+                sizeFrom: 0
+                sizeTo: 2
+                colorFrom: 00ff73
+                colorTo: 00d9ff00
+                spin: 2
+                }
+                {
+                type: ParticleEffect
+                particles: 3
+                region: c00l-point
+                lifetime: 35
+                length: 8
+                sizeFrom: 0
+                sizeTo: 2
+                colorFrom: 00ff73
+                colorTo: 00d9ff00
+                spin: 2
+                }
+        ]
+}
+
+
+	rotation: 0
+    x: 0
+	y: 0
+	interval: 8
+}
+
+]
+
+

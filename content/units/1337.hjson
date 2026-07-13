@@ -1,0 +1,67 @@
+type: mech
+name: "[green]Воин"
+alwaysUnlocked: true
+armor: 10
+outlines: false
+health: 130
+range: 8
+rotateMoveFirst: false
+rotateSpeed: 3
+hitSize: 8
+canDrown: false
+stepShake: 0
+description: "[green]Выживший-телохранитель.[] Тяжелобронированный Гость 1337. Способен оглушать и отбрасывать убийц мощным ударом ближнего боя."
+
+
+
+weapons: [
+{
+reload: 480
+x: 4
+y: 4
+mirror: false
+rotate: false
+inaccuracy: 0
+useAmmo: false
+shootSound: hit
+bullet: {
+		type: BulletType
+		damage: 10
+		width: 1
+		height: 1
+		speed: 0
+		splashDamage: 12
+		splashDamageRadius: 16
+		absorbable: true
+		lifetime: 0
+		pierce: false
+		hitEffect: none
+		shootEffect: none
+		smokeEffect: none
+		despawnEffect: none
+		knockback: 4.7
+		impact: true
+		hitSound: hit
+		status: mod-stun
+		statusDuration: 120
+		recoil: -1
+}
+}
+]
+
+isEnemy: true
+accel: 0.2
+drag: 0.1
+speed: 1.8
+drawCell: false
+
+
+
+abilities: [
+  {
+    type: RegenAbility
+    amount: 0.0016666666666666668
+  }
+]
+
+

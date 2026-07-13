@@ -1,0 +1,202 @@
+type: mech
+name: "[purple]Джонни Пуня"
+alwaysUnlocked: true
+armor: 8
+outlines: false
+health: 2000
+range: 8
+rotateMoveFirst: false
+rotateSpeed: 3
+hitSize: 8
+canDrown: false
+stepShake: 0
+loopSound: jonn-theme
+loopSoundVolume: 1
+
+description: "[purple]Мифический Лиссяндец-хакер.[] Окружает себя аурой тотального замедления, заражает выживших кодовым вирусом и швыряет мины-ошибки."
+
+
+
+weapons: [
+{
+reload: 120
+x: 4
+y: 4
+mirror: false
+rotate: false
+inaccuracy: 0
+useAmmo: false
+shootSound: slash
+bullet: {
+		type: BulletType
+		damage: 6
+		width: 1
+		height: 1
+		speed: 0
+		splashDamage: 20
+		splashDamageRadius: 16
+		absorbable: true
+		lifetime: 0
+		pierce: false
+		hitEffect: none
+		shootEffect: none
+		smokeEffect: none
+		despawnEffect: none
+		knockback: 4.7
+		impact: true
+		hitSound: hit
+		status: corrupted
+		statusDuration: 120
+		recoil: -1
+}
+}
+
+
+{
+reload: 5
+x: 0
+y: 0
+mirror: false
+rotate: false
+inaccuracy: 0
+useAmmo: false
+shootSound: none
+alwaysShooting: true
+bullet: {
+		type: BasicBulletType
+		shootEffect: none
+		smokeEffect: none
+		despawnEffect: none
+		hitEffect: none
+		collides: false
+		hittable: false
+		reflectable: false
+		absorbable: false
+		width: 0
+		height: 0
+		instantDisappear: true
+		damage: 0
+		splashDamage: 0
+		splashDamageRadius: 0
+		damage: 0
+		knockback: 0
+		shrinkX: 0
+		shrinkY: 0
+		lightRadius: 0
+		lightOpacity: 0
+		lightColor: ffffff
+		hitShake: 0
+		despawnShake: 0
+		fragBullets: 1
+		fragBullet: {
+			type: BasicBulletType
+			damage: 0
+			width: 5
+			height: 5
+			speed: 0
+			splashDamage: 3
+			splashDamageRadius: 9
+			absorbable: true
+			lifetime: 400
+			pierce: false
+			hitEffect: none
+			shootEffect: none
+			smokeEffect: none
+			despawnEffect: none
+			knockback: 0.3
+			hitSound: none
+			status: corrupted
+			statusDuration: 30
+			despawnHit: true
+			frontColor: 570d0d
+			backColor: 220606
+		}
+}
+}
+
+ {
+    reload: 3600
+    x: 0
+    y: 0
+    mirror: false
+    rotate: false
+    inaccuracy: 0
+    useAmmo: false
+    shootStatus: fast
+    shootStatusDuration: 120
+    shootSound: pulseBlast
+    
+    bullet: {
+      type: BasicBulletType
+      shootEffect: none
+      smokeEffect: none
+      despawnEffect: none
+      hitEffect: none
+      collides: false
+      hittable: false
+      reflectable: false
+      absorbable: false
+      width: 0
+      height: 0
+      lifetime: 2
+      speed: 0.1
+      damage: 0
+      splashDamage: 0
+      splashDamageRadius: 0
+      knockback: 0
+      shrinkX: 0
+      shrinkY: 0
+      lightRadius: 0
+      lightOpacity: 0
+      lightColor: ffffff
+      hitShake: 0
+      despawnShake: 0
+      spawnUnit: corupt-mine
+    }
+  }
+]
+
+isEnemy: true
+accel: 0.2
+drag: 0.1
+speed: 2.3
+drawCell: false
+
+
+
+abilities: [
+  {
+    type: RegenAbility
+    amount: 0.025
+  }
+    {
+type: EnergyFieldAbility
+damage: 0
+reload: 0
+range: 80
+healEffect: none
+hitEffect: none	
+damageEffect: none
+status: slow
+shootSound: none
+statusDuration: 30
+maxTargets: 999999
+healPercent: 0
+sameTypeHealMult: 0
+displayHeal: false
+blinkScl: 0
+blinkSize: 0
+effectRadius: 0
+sectorRad: 0
+rotateSpeed: 0
+sectors: 0	
+color: 310606
+useAmmo: false
+}
+]
+
+
+immunities: [burning, melting, mod-melt, mod-gorenie, corrupted, 1glitch1]
+
+
+

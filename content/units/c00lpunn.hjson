@@ -1,0 +1,178 @@
+type: mech
+name: "[scarlet]c00lpunn"
+alwaysUnlocked: true
+armor: 8
+outlines: false
+health: 1985
+range: 8
+rotateMoveFirst: false
+rotateSpeed: 3
+hitSize: 8
+canDrown: false
+stepShake: 0
+loopSound: cool-theme
+loopSoundVolume: 1
+
+
+description: "[scarlet]Самый быстрый убийца Лиссяндцев.[] Безумный Пунь-хакер, вооруженный мечом и взрывной пиццей. Спавнит горящих клонов-доставщиков."
+
+
+
+
+weapons: [
+{
+reload: 120
+x: 4
+y: 4
+mirror: false
+rotate: false
+inaccuracy: 0
+useAmmo: false
+shootSound: slash
+bullet: {
+		type: BulletType
+		damage: 14
+		width: 1
+		height: 1
+		speed: 0
+		splashDamage: 16
+		splashDamageRadius: 16
+		absorbable: true
+		lifetime: 0
+		pierce: false
+		hitEffect: none
+		shootEffect: none
+		smokeEffect: none
+		despawnEffect: none
+		knockback: 4.7
+		impact: true
+		hitSound: hit
+		status: slow
+		statusDuration: 30
+		recoil: -1
+}
+}
+
+
+{
+reload: 3600
+x: 0
+y: 0
+mirror: false
+rotate: false
+inaccuracy: 0
+useAmmo: false
+shootSound: bang
+bullet: {
+		type: BasicBulletType
+		shootEffect: none
+		smokeEffect: none
+		despawnEffect: none
+		hitEffect: none
+		collides: false
+		hittable: false
+		reflectable: false
+		absorbable: false
+		width: 0
+		height: 0
+		instantDisappear: true
+		damage: 0
+		splashDamage: 0
+		splashDamageRadius: 0
+		damage: 0
+		knockback: 0
+		shrinkX: 0
+		shrinkY: 0
+		lightRadius: 0
+		lightOpacity: 0
+		lightColor: ffffff
+		hitShake: 0
+		despawnShake: 0
+		fragBullets: 1
+		fragBullet: {
+			type: BasicBulletType
+			damage: 0
+			width: 5
+			height: 5
+			speed: 0
+			splashDamage: 56
+			splashDamageRadius: 18
+			absorbable: true
+			lifetime: 600
+			pierce: false
+			hitEffect: instBomb
+			shootEffect: none
+			smokeEffect: none
+			despawnEffect: none
+			knockback: 4.7
+			hitSound: hit
+			status: mod-stun
+			statusDuration: 120
+			despawnHit: true
+			makeFire: true
+			hitSound: pizza-explode
+		}
+}
+}
+
+{
+reload: 7200
+x: -4
+y: 0
+mirror: true
+alternate: false
+rotate: false
+inaccuracy: 0
+useAmmo: false
+shootSound: bang
+bullet: {
+		type: BasicBulletType
+		shootEffect: none
+		smokeEffect: none
+		despawnEffect: none
+		hitEffect: none
+		collides: false
+		hittable: false
+		reflectable: false
+		absorbable: false
+		width: 0
+		height: 0
+		instantDisappear: true
+		damage: 0
+		splashDamage: 0
+		splashDamageRadius: 0
+		damage: 0
+		knockback: 0
+		shrinkX: 0
+		shrinkY: 0
+		lightRadius: 0
+		lightOpacity: 0
+		lightColor: ffffff
+		hitShake: 0
+		despawnShake: 0
+		spawnUnit: c00lbot
+		recoil: -2
+}
+}
+]
+
+isEnemy: true
+accel: 0.2
+drag: 0.1
+speed: 2.3
+drawCell: false
+
+
+
+abilities: [
+  {
+    type: RegenAbility
+    amount: 0.025
+  }
+]
+
+
+immunities: [burning, melting, mod-melt, mod-gorenie]
+
+
+

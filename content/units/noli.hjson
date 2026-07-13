@@ -1,0 +1,321 @@
+type: mech
+name: "[purple]Звёздный Пуня"
+alwaysUnlocked: true
+armor: 8
+outlines: false
+health: 2350
+range: 8
+rotateMoveFirst: false
+rotateSpeed: 3
+hitSize: 8
+canDrown: false
+stepShake: 0
+loopSound: noli-theme
+loopSoundVolume: 1
+
+description: "[purple]Развращённый Лиссяндец Пустоты.[] Преследователь класса Ноли. Поглощён силой Звезды Пустоты из-за предательства 007н7. Способен совершать рывки и станить всю карту."
+
+
+
+weapons: [
+{
+reload: 120
+x: 4
+y: 4
+mirror: false
+rotate: false
+inaccuracy: 0
+useAmmo: false
+shootSound: slash
+bullet: {
+		type: BulletType
+		damage: 9
+		width: 1
+		height: 1
+		speed: 0
+		splashDamage: 27
+		splashDamageRadius: 16
+		absorbable: true
+		lifetime: 0
+		pierce: false
+		hitEffect: none
+		shootEffect: none
+		smokeEffect: none
+		despawnEffect: none
+		knockback: 4.7
+		impact: true
+		hitSound: hit
+		status: slow
+		statusDuration: 60
+		recoil: -1
+}
+}
+
+
+{
+reload: 3600
+x: 0
+y: 0
+mirror: false
+rotate: false
+inaccuracy: 0
+useAmmo: false
+	shootStatus: {
+		name: void-dash
+		localizedName: "[purple]Рывок Пустоты"
+		speedMultiplier: 2.15
+		damageMultiplier: 1.1
+		reloadMultiplier: 6
+		effect: {
+		type: MultiEffect
+		effects: [
+			{
+			type: ParticleEffect
+			particles: 2
+			line: true
+			length: 20
+			lifetime: 25
+			colorFrom: 7b2cbf
+			colorTo: 000000
+			sizeFrom: 3
+			sizeTo: 1
+			cone: 30
+			}
+			{
+			type: RegionEffect
+			region: mod-flash
+			lifetime: 15
+			sizeFrom: 8
+			sizeTo: 0
+			colorFrom: 9d4edd
+			colorTo: 000000
+			}
+		]
+		}
+	}
+shootStatusDuration: 120
+shootSound: shootSmite
+shootEffect: {
+    type: MultiEffect
+    effects: [
+      {
+        type: WaveEffect
+        colorFrom: 000000
+        colorTo: 5a189a
+        sizeFrom: 0
+        sizeTo: 50
+        strokeFrom: 8
+        strokeTo: 0
+        lifetime: 25
+      }
+      {
+        type: ParticleEffect
+        particles: 15
+        length: 35
+        lifetime: 45
+        colorFrom: 9d4edd
+        colorTo: 000000
+        sizeFrom: 4
+        sizeTo: 0
+        interp: pow5Out
+      }
+    ]
+  }
+bullet: {
+		type: BasicBulletType
+		shootEffect: none
+		smokeEffect: none
+		despawnEffect: none
+		hitEffect: none
+		collides: false
+		hittable: false
+		reflectable: false
+		absorbable: false
+		width: 0
+		height: 0
+		instantDisappear: true
+		damage: 0
+		splashDamage: 0
+		splashDamageRadius: 0
+		damage: 0
+		knockback: 0
+		shrinkX: 0
+		shrinkY: 0
+		lightRadius: 0
+		lightOpacity: 0
+		lightColor: ffffff
+		hitShake: 0
+		despawnShake: 0
+		recoil: -8
+}
+}
+
+{
+reload: 1800
+x: 4
+y: 4
+mirror: false
+rotate: false
+inaccuracy: 0
+useAmmo: false
+shootSound: throw
+shootStatus: fast
+shootStatusDuration: 120
+bullet: {
+		type: BasicBulletType
+		damage: 20
+		speed: 4
+		splashDamage: 25
+		splashDamageRadius: 20
+		absorbable: true
+		lifetime: 40
+		pierce: false
+		sprite: mod-flash
+		hitEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: WaveEffect
+      colorFrom: 9d4edd
+      colorTo: 000000
+      sizeFrom: 24
+      sizeTo: 0
+      strokeFrom: 0
+      strokeTo: 4
+      lifetime: 15
+    }
+    {
+      type: WaveEffect
+      colorFrom: 000000
+      colorTo: 5a189a
+      sizeFrom: 0
+      sizeTo: 32
+      strokeFrom: 6
+      strokeTo: 0
+      lifetime: 20
+    }
+    {
+      type: RegionEffect
+      region: mod-flash
+      lifetime: 25
+      sizeFrom: 12
+      sizeTo: 0
+      colorFrom: 7b2cbf
+      colorTo: 000000
+    }
+    {
+      type: ParticleEffect
+      particles: 12
+      length: 24
+      lifetime: 35
+      colorFrom: c77dff
+      colorTo: 000000
+      sizeFrom: 3
+      sizeTo: 0
+      interp: pow3Out
+    }
+  ]
+}
+
+		shootEffect: none
+		smokeEffect: none
+		despawnEffect: none
+		knockback: 3.89
+		status: mod-blind
+		statusDuration: 300
+		hitSound: bang
+		spin: 3
+		scaleLife: true
+		fragBullets: 1
+		fragBullet: {
+			type: BulletType
+			lifetime: 1
+			hittable: false
+			instantDisappear: true
+			damage: 0
+			collides: false
+			reflectable: false
+			splashDamage: 0
+			splashDamageRadius: 111
+			speed: 0
+			hitSound: explosion
+			status: mod-stun
+			statusDuration: 140
+		}
+
+}
+}
+
+{
+reload: 7200
+x: 0
+y: 0
+mirror: false
+rotate: false
+inaccuracy: 0
+useAmmo: false
+shootSound: bang
+shootStatus: fast
+shootStatusDuration: 120
+	bullet: {
+				type: BulletType
+				lifetime: 1
+				hittable: false
+				instantDisappear: true
+				damage: 0
+				collides: false
+				reflectable: false
+				splashDamage: 0
+				splashDamageRadius: 9999999999
+				speed: 0
+				hitSound: bang
+				status: mod-stun
+				statusDuration: 140
+				despawnHit: true
+				hitEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: WaveEffect
+      colorFrom: 000000
+      colorTo: 5a189a
+      sizeFrom: 0
+      sizeTo: 2000
+      strokeFrom: 30
+      strokeTo: 0
+      lifetime: 180
+    }
+    {
+      type: WaveEffect
+      colorFrom: 9d4edd
+      colorTo: 000000
+      sizeFrom: 0
+      sizeTo: 1800
+      strokeFrom: 15
+      strokeTo: 0
+      lifetime: 150
+    }
+  ]
+}
+
+
+	}
+}
+]
+
+isEnemy: true
+accel: 0.2
+drag: 0.1
+speed: 1.8
+drawCell: false
+
+
+
+abilities: [
+  {
+    type: RegenAbility
+    amount: 0.025
+  }
+]
+
+

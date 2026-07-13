@@ -1,0 +1,71 @@
+type: missile
+controller: groundAI
+name: "[sky]Щит Ветров"
+speed: 0
+hitSize: 8
+hidden: false
+health: 90
+armor: 9
+loopSound: none
+loopSoundVolume: 1
+outlines: false
+rotateSpeed: 0
+lifetime: 1200
+range: 0
+flying: false
+outlines: false
+template: MissileUnitType
+drawCell: false
+trailColor: ffb75e
+engineSize: 0
+engineOffset: 0
+missileAccelTime: 0
+lowAltitude: true
+allowedInPayloads: false
+useUnitCap: false
+playerControllable: false
+physics: false
+createWreck: false
+createScorch: false
+targetAir: true
+targetGround: true
+targetable: false
+
+
+
+abilities: [
+  	{
+		type: EnergyFieldAbility
+		damage: 12
+		reload: 5
+		range: 50
+		healEffect: heal
+		hitEffect: none	
+		damageEffect: none
+		status: slow
+		shootSound: flame
+		statusDuration: 30
+		maxTargets: 999999
+		healPercent: 0.4166666666666667
+		sameTypeHealMult: 1
+		displayHeal: true
+		blinkScl: 0
+		blinkSize: 0
+		effectRadius: 0
+		sectorRad: 0
+		rotateSpeed: 0
+		sectors: 0	
+		color: #1aeca6
+		useAmmo: false
+	}
+	{
+		type: ForceFieldAbility
+		radius: 100
+		regen: 0.833333333
+		max: 120
+		cooldown: 3600
+		sides: 360
+		rotation: 0
+	}
+]
+

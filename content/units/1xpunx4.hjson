@@ -1,0 +1,356 @@
+type: mech
+name: "[lime]1хПУНЬх4"
+alwaysUnlocked: true
+armor: 11
+outlines: false
+health: 3111
+range: 8
+rotateMoveFirst: false
+rotateSpeed: 3
+hitSize: 8
+canDrown: false
+stepShake: 0
+loopSound: punx4-theme
+loopSoundVolume: 1
+
+
+
+description: "[lime]Мифический Глитч-Пунь Судного Дня.[] Абсолютное воплощение хаоса и разрушения кода. Способен парализовать всю карту и призвать армию ботов."
+
+weapons: [
+{
+reload: 120
+x: 4
+y: 4
+mirror: false
+rotate: false
+inaccuracy: 0
+useAmmo: false
+shootSound: slash
+bullet: {
+		type: BulletType
+		damage: 11
+		width: 1
+		height: 1
+		speed: 0
+		splashDamage: 11
+		splashDamageRadius: 22
+		absorbable: true
+		lifetime: 0
+		pierce: false
+		hitEffect: none
+		shootEffect: none
+		smokeEffect: none
+		despawnEffect: none
+		knockback: 4.7
+		impact: true
+		hitSound: hit
+		status: 1glitch1
+		statusDuration: 55.5
+		recoil: -1
+}
+}
+
+{
+reload: 1200
+x: 4
+y: 4
+mirror: false
+rotate: false
+inaccuracy: 0
+useAmmo: false
+shootSound: slashUlt
+bullet: {
+		type: BulletType
+		damage: 22
+		width: 1
+		height: 1
+		speed: 0
+		splashDamage: 22
+		splashDamageRadius: 44
+		absorbable: true
+		lifetime: 0
+		pierce: false
+		hitEffect: none
+		shootEffect: none
+		smokeEffect: none
+		despawnEffect: none
+		knockback: 4.7
+		impact: true
+		hitSound: hit
+		status: 1glitch1
+		statusDuration: 111
+		recoil: -2
+}
+}
+
+
+
+
+{
+reload: 7200
+x: 0
+y: 0
+mirror: false
+rotate: false
+inaccuracy: 0
+useAmmo: false
+shootSound: bang
+shootStatus: fast
+shootStatusDuration: 120
+	bullet: {
+				type: BulletType
+				lifetime: 1
+				hittable: false
+				instantDisappear: true
+				damage: 0
+				collides: false
+				reflectable: false
+				splashDamage: 0
+				splashDamageRadius: 9999999999
+				speed: 0
+				hitSound: bang
+				status: mod-stun
+				statusDuration: 195
+				despawnHit: true
+				hitEffect: {
+					type: MultiEffect
+					effects: [
+						{
+						type: WaveEffect
+						colorFrom: 00ff00
+						colorTo: 000000
+						sizeFrom: 0
+						sizeTo: 2500
+						strokeFrom: 40
+						strokeTo: 0
+						lifetime: 300
+						}
+						{
+						type: WaveEffect
+						delay: 20
+						colorFrom: 000000
+						colorTo: 004d00
+						sizeFrom: 0
+						sizeTo: 2300
+						strokeFrom: 30
+						strokeTo: 0
+						lifetime: 280
+						}
+						{
+						type: WaveEffect
+						delay: 40
+						colorFrom: 00ff00
+						colorTo: 000000
+						sizeFrom: 0
+						sizeTo: 2100
+						strokeFrom: 25
+						strokeTo: 0
+						lifetime: 260
+						}
+						{
+						type: WaveEffect
+						delay: 60
+						colorFrom: 000000
+						colorTo: 1a0000
+						sizeFrom: 0
+						sizeTo: 1900
+						strokeFrom: 20
+						strokeTo: 0
+						lifetime: 240
+						}
+						{
+						type: WaveEffect
+						delay: 80
+						colorFrom: ff0000
+						colorTo: 000000
+						sizeFrom: 0
+						sizeTo: 1700
+						strokeFrom: 18
+						strokeTo: 0
+						lifetime: 220
+						}
+						{
+						type: WaveEffect
+						delay: 100
+						colorFrom: 000000
+						colorTo: 00ff00
+						sizeFrom: 0
+						sizeTo: 1500
+						strokeFrom: 16
+						strokeTo: 0
+						lifetime: 200
+						}
+						{
+						type: WaveEffect
+						delay: 120
+						colorFrom: 00cc00
+						colorTo: 000000
+						sizeFrom: 0
+						sizeTo: 1300
+						strokeFrom: 14
+						strokeTo: 0
+						lifetime: 180
+						}
+						{
+						type: WaveEffect
+						delay: 140
+						colorFrom: 000000
+						colorTo: 003300
+						sizeFrom: 0
+						sizeTo: 1100
+						strokeFrom: 12
+						strokeTo: 0
+						lifetime: 160
+						}
+						{
+						type: WaveEffect
+						delay: 160
+						colorFrom: 00ff00
+						colorTo: 000000
+						sizeFrom: 0
+						sizeTo: 900
+						strokeFrom: 10
+						strokeTo: 0
+						lifetime: 140
+						}
+						{
+						type: WaveEffect
+						delay: 180
+						colorFrom: 000000
+						colorTo: 330000
+						sizeFrom: 0
+						sizeTo: 700
+						strokeFrom: 8
+						strokeTo: 0
+						lifetime: 120
+						}
+						{
+						type: WaveEffect
+						delay: 200
+						colorFrom: ff0000
+						colorTo: 000000
+						sizeFrom: 0
+						sizeTo: 500
+						strokeFrom: 6
+						strokeTo: 0
+						lifetime: 100
+						}
+						{
+						type: WaveEffect
+						delay: 220
+						colorFrom: ffffff
+						colorTo: 000000
+						sizeFrom: 0
+						sizeTo: 300
+						strokeFrom: 4
+						strokeTo: 0
+						lifetime: 80
+						}
+					]
+					}
+
+
+
+	}
+}
+
+
+{
+reload: 7200
+x: -4
+y: 0
+mirror: true
+alternate: false
+rotate: false
+inaccuracy: 0
+useAmmo: false
+shootSound: bang
+bullet: {
+		type: BasicBulletType
+		shootEffect: none
+		smokeEffect: none
+		despawnEffect: none
+		hitEffect: none
+		collides: false
+		hittable: false
+		reflectable: false
+		absorbable: false
+		width: 0
+		height: 0
+		instantDisappear: true
+		damage: 0
+		splashDamage: 0
+		splashDamageRadius: 0
+		damage: 0
+		knockback: 0
+		shrinkX: 0
+		shrinkY: 0
+		lightRadius: 0
+		lightOpacity: 0
+		lightColor: ffffff
+		hitShake: 0
+		despawnShake: 0
+		spawnUnit: 1xbotx4
+		despawnUnit: 1xbotx4
+}
+}
+{
+reload: 7200
+x: -4
+y: 0
+mirror: true
+alternate: false
+rotate: false
+inaccuracy: 0
+useAmmo: false
+shootSound: bang
+bullet: {
+		type: BasicBulletType
+		shootEffect: none
+		smokeEffect: none
+		despawnEffect: none
+		hitEffect: none
+		collides: false
+		hittable: false
+		reflectable: false
+		absorbable: false
+		width: 0
+		height: 0
+		instantDisappear: true
+		damage: 0
+		splashDamage: 0
+		splashDamageRadius: 0
+		damage: 0
+		knockback: 0
+		shrinkX: 0
+		shrinkY: 0
+		lightRadius: 0
+		lightOpacity: 0
+		lightColor: ffffff
+		hitShake: 0
+		despawnShake: 0
+		spawnUnit: 1xbotx4
+		despawnUnit: 1xbotx4
+}
+}
+]
+
+isEnemy: true
+accel: 0.2
+drag: 0.1
+speed: 2.4
+drawCell: false
+
+
+
+abilities: [
+  {
+    type: RegenAbility
+    amount: 0.025
+  }
+]
+
+immunities: [burning, melting, mod-melt, mod-gorenie, corrupted, 1glitch1]
+
+

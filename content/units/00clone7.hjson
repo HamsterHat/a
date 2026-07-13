@@ -1,0 +1,31 @@
+type: mech
+name: "[sky]00пуньН7клон"
+alwaysUnlocked: true
+armor: 0
+outlines: false
+health: 110
+range: 8
+rotateMoveFirst: false
+rotateSpeed: 3
+hitSize: 8
+canDrown: false
+stepShake: 0
+isEnemy: true
+accel: 0.2
+drag: 0.1
+speed: 2.4
+drawCell: false
+
+
+
+abilities: [
+  {
+    type: RegenAbility
+    amount: 0.0016666666666666668
+  }
+]
+
+
+
+description: "[sky]Голографическая копия агента 007пунь7.[] Служит идеальной мишенью для отвлечения c00lpunn и его горящих клонов."
+

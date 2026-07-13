@@ -1,0 +1,67 @@
+type: flying
+flying: true
+name: "[scarlet]СПЕКТР"
+alwaysUnlocked: true
+armor: 40000000
+outlines: false
+health: 40000000
+range: 8
+rotateMoveFirst: false
+rotateSpeed: 3
+hitSize: 8
+canDrown: false
+stepShake: 0
+loopSound: jam
+loopSoundVolume: 1
+isEnemy: false
+accel: 1
+drag: 1
+speed: 3
+drawCell: false
+hittable: false
+killable: false
+targetable: false
+
+engineSize: 0
+engineOffset: 0
+
+buildSpeed: 12000000000
+
+description: "[scarlet]Глитч-Сверхразум и Создатель Чистилища.[] Неиграбельное летающее Божество. Обладает абсолютным бессмертием и мгновенно взламывает интерфейс всех выживших."
+
+
+
+abilities: [
+  {
+    type: RegenAbility
+    amount: 9999999
+  }
+      {
+type: EnergyFieldAbility
+damage: 0
+reload: 0
+range: 80
+healEffect: none
+hitEffect: none	
+damageEffect: none
+status: hacked
+shootSound: none
+statusDuration: 999
+maxTargets: 999999
+healPercent: 0
+sameTypeHealMult: 0
+displayHeal: false
+blinkScl: 0
+blinkSize: 0
+effectRadius: 0
+sectorRad: 0
+rotateSpeed: 0
+sectors: 0	
+color: ff0000
+useAmmo: false
+}
+]
+
+immunities: [burning, melting, mod-melt, mod-gorenie, corrupted, 1glitch1, mod-stun, mod-blind, hacked, acid-poison]
+
+

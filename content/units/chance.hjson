@@ -1,0 +1,61 @@
+type: mech
+name: "[royal]Панс"
+alwaysUnlocked: true
+armor: 0
+outlines: false
+health: 125
+range: 8
+rotateMoveFirst: false
+rotateSpeed: 3
+hitSize: 8
+canDrown: false
+stepShake: 0
+
+description: "[royal]Выживший-азартный игрок класса Страж.[] Пунь-версия легендарного Шанса. Полагается на свой кремневый пистоль и абсолютную удачу."
+
+
+
+weapons: [
+{
+reload: 480
+x: 4
+y: 4
+mirror: false
+rotate: false
+inaccuracy: 0
+useAmmo: false
+shootSound: bang
+bullet: {
+		type: BasicBulletType
+		damage: 25
+		width: 2
+		height: 2
+		speed: 4
+		absorbable: true
+		lifetime: 80
+		pierce: false
+		buildingDamageMultiplier: 0.1
+		collideTerrain: true
+		createChance: 0.5
+		status: mod-stun
+		statusDuration: 120
+}
+}
+]
+
+isEnemy: true
+accel: 0.2
+drag: 0.1
+speed: 1.9
+drawCell: false
+
+
+
+abilities: [
+  {
+    type: RegenAbility
+    amount: 0.0016666666666666668
+  }
+]
+
+

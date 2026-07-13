@@ -1,0 +1,191 @@
+type: mech
+name: "[red]a[blue]l[white]ex"
+alwaysUnlocked: true
+armor: 9
+outlines: false
+health: 9999
+range: 8
+rotateMoveFirst: false
+rotateSpeed: 3
+hitSize: 8
+canDrown: false
+stepShake: 0
+loopSound: noli-theme
+loopSoundVolume: 1
+
+
+description: "[royal]H4CK3R.[] [scarlet]768fgjhgw7jhrihoisfdgskjdfhsoiehgskdfjhueyijhewuhiusdhfsueoiweyuywih7645uukygkjgd77s66gf9sd6f5986465gksuhkdfglsfygsfgs6987587645hgkshfgksdfg6i7w69876987gskjhfgksuydtfisd6f8g76. 999999999. [royal]UnknownEntity_999[][] lol lmao yshsgkfhgskkrukjshgdfygtiuytiuyiuyti67869837569837469587369487569s8eytrkshgfjhsgkrykjhwgkuyetrysiugkjfshflsiuyr68w76768769udfhglksjhoi758495879898987876sdf668s7d6gsihdflhsdgfkjhsdf"
+
+
+
+weapons: [
+{
+reload: 60
+x: 4
+y: 4
+mirror: false
+rotate: false
+inaccuracy: 0
+useAmmo: false
+shootSound: throw
+bullet: {
+		type: BulletType
+		damage: 1
+		width: 1
+		height: 1
+		speed: 0
+		absorbable: true
+		lifetime: 0
+		pierce: false
+		hitEffect: none
+		shootEffect: none
+		smokeEffect: none
+		despawnEffect: none
+		knockback: 4.7
+		impact: true
+		hitSound: bang
+		status: none
+		statusDuration: 0
+		recoil: -1
+		spawnBullets: [
+			{
+				type: BulletType
+				lifetime: 1
+				hittable: false
+				instantDisappear: true
+				damage: 0
+				collides: false
+				reflectable: false
+				splashDamage: 9
+				splashDamageRadius: 9
+				speed: 0
+				hitSound: none
+				status: mod-KR
+				statusDuration: 120
+			}
+			{
+				type: BulletType
+				lifetime: 1
+				hittable: false
+				instantDisappear: true
+				damage: 0
+				collides: false
+				reflectable: false
+				splashDamage: 9
+				splashDamageRadius: 9
+				speed: 0
+				hitSound: none
+				status: slow
+				statusDuration: 120
+			}
+		]
+}
+}
+
+{
+reload: 600
+x: 4
+y: 4
+mirror: false
+rotate: false
+inaccuracy: 0
+useAmmo: false
+shootSound: throw
+bullet: {
+		type: BulletType
+		damage: 1
+		width: 1
+		height: 1
+		speed: 0
+		absorbable: true
+		lifetime: 0
+		pierce: false
+		hitEffect: none
+		shootEffect: none
+		smokeEffect: none
+		despawnEffect: none
+		knockback: 4.7
+		impact: true
+		hitSound: bang
+		status: none
+		statusDuration: 0
+		spawnBullets: [
+			{
+				type: BulletType
+				lifetime: 1
+				hittable: false
+				instantDisappear: true
+				damage: 0
+				collides: false
+				reflectable: false
+				splashDamage: 18
+				splashDamageRadius: 9
+				speed: 0
+				hitSound: none
+				status: mod-KR
+				statusDuration: 240
+			}
+			{
+				type: BulletType
+				lifetime: 1
+				hittable: false
+				instantDisappear: true
+				damage: 0
+				collides: false
+				reflectable: false
+				splashDamage: 18
+				splashDamageRadius: 9
+				speed: 0
+				hitSound: none
+				status: mod-stun
+				statusDuration: 240
+			}
+		]
+}
+}
+]
+
+isEnemy: true
+accel: 0.2
+drag: 0.1
+speed: 2.1
+drawCell: false
+
+
+
+abilities: [
+  {
+    type: RegenAbility
+    amount: 999
+  }
+    {
+type: EnergyFieldAbility
+damage: 0
+reload: 0
+range: 80
+healEffect: none
+hitEffect: none	
+damageEffect: none
+status: slow
+shootSound: none
+statusDuration: 30
+maxTargets: 999999
+healPercent: 0
+sameTypeHealMult: 0
+displayHeal: false
+blinkScl: 0
+blinkSize: 0
+effectRadius: 0
+sectorRad: 0
+rotateSpeed: 0
+sectors: 0	
+color: 0d3814
+useAmmo: false
+}
+]
+
+
+immunities: [burning, melting, mod-melt, mod-gorenie]
+
+
+

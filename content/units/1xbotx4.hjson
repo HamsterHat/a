@@ -1,0 +1,58 @@
+type: mech
+name: "[green]1xBOTx4"
+alwaysUnlocked: true
+armor: 5
+outlines: false
+health: 10
+range: 8
+rotateMoveFirst: false
+rotateSpeed: 3
+hitSize: 8
+canDrown: false
+stepShake: 0
+
+
+isEnemy: true
+accel: 0.2
+drag: 0.1
+speed: 0.5
+drawCell: false
+
+
+description: "[green]Глитч-прислужник титана.[] Медлительный, но крайне опасный бот-вирус. Распространяет вокруг себя искажающее поле, заражающее всех выживших."
+
+
+
+abilities: [
+  {
+type: EnergyFieldAbility
+damage: 0.25
+reload: 1
+range: 24
+healEffect: none
+hitEffect: none	
+damageEffect: none
+status: 1glitch1
+shootSound: none
+statusDuration: 30
+maxTargets: 999999
+healPercent: 0
+sameTypeHealMult: 0
+displayHeal: true
+blinkScl: 0
+blinkSize: 0
+effectRadius: 0
+sectorRad: 0
+rotateSpeed: 0
+sectors: 0	
+color: 0f5705
+useAmmo: false
+}
+]
+
+
+
+immunities: [burning, melting, mod-melt, mod-gorenie]
+
+
+

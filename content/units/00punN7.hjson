@@ -1,0 +1,119 @@
+type: mech
+name: "[sky]00пуньН7"
+alwaysUnlocked: true
+armor: 0
+outlines: false
+health: 110
+range: 8
+rotateMoveFirst: false
+rotateSpeed: 3
+hitSize: 8
+canDrown: false
+stepShake: 0
+isEnemy: true
+accel: 0.2
+drag: 0.1
+speed: 2.4
+drawCell: false
+
+description: "[sky]Легендарный Пунь-хакер и приёмный отец c00lpunn.[] Использует скрытый софт и зеркальные обманки, чтобы выжить в безумной игре своего сына."
+
+
+
+abilities: [
+  {
+    type: RegenAbility
+    amount: 0.0016666666666666668
+  }
+]
+
+weapons: [
+  {
+    reload: 3600
+    x: -4
+    y: 0
+    mirror: true
+    alternate: false
+    rotate: false
+    inaccuracy: 0
+    useAmmo: false
+    shootStatus: fast
+    shootStatusDuration: 120
+    shootSound: bang
+    
+    bullet: {
+      type: BasicBulletType
+      shootEffect: none
+      smokeEffect: none
+      despawnEffect: none
+      hitEffect: none
+      collides: false
+      hittable: false
+      reflectable: false
+      absorbable: false
+      width: 0
+      height: 0
+      lifetime: 2
+      speed: 0.1
+      damage: 0
+      splashDamage: 0
+      splashDamageRadius: 0
+      knockback: 0
+      shrinkX: 0
+      shrinkY: 0
+      lightRadius: 0
+      lightOpacity: 0
+      lightColor: ffffff
+      hitShake: 0
+      despawnShake: 0
+      spawnUnit: 00clone7
+      despawnUnit: 00clone7
+      recoil: 3
+    }
+  }
+
+  {
+    reload: 3600
+    x: -4
+    y: 0
+    mirror: true
+    alternate: false
+    rotate: false
+    inaccuracy: 0
+    useAmmo: false
+    shootStatus: fast
+    shootStatusDuration: 120
+    shootSound: bang
+    
+    bullet: {
+      type: BasicBulletType
+      shootEffect: none
+      smokeEffect: none
+      despawnEffect: none
+      hitEffect: none
+      collides: false
+      hittable: false
+      reflectable: false
+      absorbable: false
+      width: 0
+      height: 0
+      lifetime: 2
+      speed: 0.1
+      damage: 0
+      splashDamage: 0
+      splashDamageRadius: 0
+      knockback: 0
+      shrinkX: 0
+      shrinkY: 0
+      lightRadius: 0
+      lightOpacity: 0
+      lightColor: ffffff
+      hitShake: 0
+      despawnShake: 0
+      spawnUnit: 00clone7
+      despawnUnit: 00clone7
+    }
+  }
+]
+
+

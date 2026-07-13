@@ -1,0 +1,86 @@
+type: missile
+controller: groundAI
+name: "[scarlet]Ловушка Джонни"
+speed: 0
+hitSize: 4
+hidden: false
+health: 100
+armor: 10
+loopSound: none
+loopSoundVolume: 1
+outlines: false
+rotateSpeed: 0
+lifetime: 2400
+range: 12
+flying: false
+outlines: false
+template: MissileUnitType
+drawCell: false
+trailColor: ffb75e
+engineSize: 0
+engineOffset: 0
+missileAccelTime: 0
+lowAltitude: true
+allowedInPayloads: false
+useUnitCap: false
+playerControllable: false
+physics: false
+createWreck: false
+createScorch: false
+targetAir: true
+targetGround: true
+targetable: false
+
+
+weapons: [
+	{
+	shootCone: 360
+          mirror: false
+          reload: 0
+          predictTarget: false
+          autoTarget: true
+          shootOnDeath: true
+          x: 0
+          shake: 5
+          y: 0
+	bullet: {
+		type: BulletType
+		lifetime: 1
+		hittable: false
+		instantDisappear: true
+		damage: 0
+		collides: false
+		reflectable: false
+		splashDamage: 50
+		splashDamageRadius: 32
+		speed: 0
+		hitColor: 630d0d
+		hitEffect: {
+			type: MultiEffect
+			effects: [massiveExplosion, scatheExplosion, scatheLight, scatheSlash, instBomb]
+		}
+		hitSound: bang
+		hitSoundVolume: 8
+		killShooter: true
+		status: mod-stun
+		statusDuration: 300
+		fragBullets: 1
+		fragBullet: {
+			type: BulletType
+			lifetime: 1
+			hittable: false
+			instantDisappear: true
+			damage: 0
+			collides: false
+			reflectable: false
+			splashDamage: 0
+			splashDamageRadius: 46
+			speed: 0
+			hitSound: explosion
+			status: corrupted
+			statusDuration: 90
+		}
+	}
+	}
+]
+

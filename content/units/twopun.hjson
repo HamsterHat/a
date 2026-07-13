@@ -1,0 +1,343 @@
+type: mech
+name: "[sky]Ту Пунь"
+alwaysUnlocked: true
+armor: 0
+outlines: false
+health: 80
+range: 8
+rotateMoveFirst: false
+rotateSpeed: 3
+hitSize: 8
+canDrown: false
+stepShake: 0
+
+description: "[sky]Хрупкий выживший-сектант класса Страж.[] Пунь-версия Two Time. Сходит с ума от вины за убийство Азура, но использует жертвенный кинжал и веру в Спавн."
+
+
+
+weapons: [
+{
+reload: 480
+x: 4
+y: 4
+mirror: false
+rotate: false
+inaccuracy: 0
+useAmmo: false
+shootSound: slash
+shootStatus: heal
+shootStatusDuration: 15
+bullet: {
+		type: BulletType
+		damage: 15
+		width: 1
+		height: 1
+		speed: 0
+		splashDamage: 20
+		splashDamageRadius: 16
+		absorbable: true
+		lifetime: 0
+		pierce: false
+		hitEffect: none
+		shootEffect: none
+		smokeEffect: none
+		despawnEffect: none
+		knockback: 4.7
+		impact: true
+		hitSound: hit
+		status: mod-stun
+		statusDuration: 90
+		recoil: -1
+}
+}
+
+
+{
+	reload: 0
+	x: 0
+	y: 0
+	mirror: false
+	rotate: false
+	shootOnDeath: true
+	ignoreRotation: true
+	aiControllable: false
+	controllable: false
+	shootCone: 360
+	bullet: {
+
+
+
+		type: BasicBulletType
+		shootEffect: none
+		smokeEffect: none
+		despawnEffect: none
+		hitEffect: {
+			type: MultiEffect
+			effects: [
+				{
+				type: WaveEffect
+				colorFrom: 000000
+				colorTo: 5a189a
+				sizeFrom: 0
+				sizeTo: 140
+				strokeFrom: 8
+				strokeTo: 0
+				lifetime: 240
+				}
+				{
+				type: WaveEffect
+				startDelay: 120
+				colorFrom: 310606
+				colorTo: 000000
+				sizeFrom: 20
+				sizeTo: 160
+				strokeFrom: 4
+				strokeTo: 0
+				lifetime: 480
+				}
+				{
+				type: WaveEffect
+				startDelay: 480
+				colorFrom: 9d4edd
+				colorTo: 000000
+				sizeFrom: 200
+				sizeTo: 0
+				strokeFrom: 0
+				strokeTo: 12
+				lifetime: 120
+				}
+				{
+				type: RadialEffect
+				amount: 4
+				lengthAbs: 80
+				lifetime: 180
+				colorFrom: 9d4edd
+				colorTo: 000000
+				strokeFrom: 6
+				strokeTo: 0
+				}
+				{
+				type: RadialEffect
+				startDelay: 180
+				amount: 8
+				lengthAbs: 110
+				lifetime: 240
+				colorFrom: 570d0d
+				colorTo: 000000
+				strokeFrom: 4
+				strokeTo: 0
+				}
+				{
+				type: RadialEffect
+				startDelay: 510
+				amount: 24
+				lengthAbs: 180
+				lifetime: 90
+				colorFrom: ffffff
+				colorTo: 7b2cbf
+				strokeFrom: 3
+				strokeTo: 0
+				}
+				{
+				type: ParticleEffect
+				particles: 14
+				length: 45
+				lifetime: 360
+				colorFrom: 220606
+				colorTo: 000000
+				sizeFrom: 12
+				sizeTo: 2
+				}
+				{
+				type: ParticleEffect
+				startDelay: 300
+				particles: 20
+				line: true
+				length: 120
+				lifetime: 120
+				colorFrom: ffffff
+				colorTo: 9d4edd
+				sizeFrom: 3
+				sizeTo: 0
+				strokeFrom: 2
+				strokeTo: 0
+				}
+				{
+				type: ParticleEffect
+				startDelay: 480
+				particles: 35
+				length: 160
+				lifetime: 120
+				colorFrom: c77dff
+				colorTo: 000000
+				sizeFrom: 5
+				sizeTo: 0
+				interp: pow3Out
+				}
+				{
+				type: ParticleEffect
+				region: mod-flash
+				particles: 5
+				length: 30
+				lifetime: 240
+				colorFrom: 7b2cbf
+				colorTo: 000000
+				sizeFrom: 32
+				sizeTo: 8
+				}
+				{
+				type: ParticleEffect
+				startDelay: 240
+				region: c00l-glitch
+				particles: 15
+				length: 70
+				lifetime: 240
+				colorFrom: 9d4edd
+				colorTo: 000000
+				sizeFrom: 16
+				sizeTo: 0
+				cone: 360
+				}
+				{
+				type: ParticleEffect
+				startDelay: 540
+				region: c00l-glitch
+				particles: 25
+				length: 140
+				lifetime: 60
+				colorFrom: ffffff
+				colorTo: 000000
+				sizeFrom: 24
+				sizeTo: 0
+				interp: pow5Out
+				}
+				{
+				type: ParticleEffect
+				startDelay: 590
+				region: c00l-glitch
+				particles: 4
+				length: 120
+				lifetime: 60
+				colorFrom: 8c00ff
+				colorTo: 000000
+				sizeFrom: 32
+				sizeTo: 0
+				cone: 360
+				}
+				{
+				type: ParticleEffect
+				region: mod-flash
+				particles: 1
+				length: 0
+				lifetime: 590
+				colorFrom: ffffff
+				colorTo: ffffff
+				sizeFrom: 0
+				sizeTo: 64
+				cone: 360
+				interp: bounceIn
+				layer: 118
+				}
+				{
+				type: ParticleEffect
+				startDelay: 590
+				region: mod-flash
+				particles: 1
+				length: 0
+				lifetime: 120
+				colorFrom: ffffff
+				colorTo: ffffff
+				sizeFrom: 64
+				sizeTo: 0
+				cone: 360
+				interp: swingOut
+				layer: 118
+				}
+				{
+				type: ParticleEffect
+				startDelay: 500
+				region: c00l-twopun
+				particles: 1
+				length: 0
+				lifetime: 95
+				colorFrom: 8c00ff00
+				colorTo: c0c0c0ff
+				sizeFrom: 40
+				sizeTo: 16
+				cone: 360
+				}
+
+			]
+			}
+		collides: false
+		hittable: false
+		reflectable: false
+		absorbable: false
+		width: 0
+		height: 0
+		instantDisappear: true
+		damage: 0
+		splashDamage: 0
+		splashDamageRadius: 0
+		damage: 0
+		knockback: 0
+		shrinkX: 0
+		shrinkY: 0
+		lightRadius: 0
+		lightOpacity: 0
+		lightColor: ffffff
+		hitShake: 0
+		despawnShake: 0
+		despawnHit: true
+		fragBullets: 1
+		fragBullet: {
+			type: BasicBulletType
+			shootEffect: none
+		lifetime: 595
+		smokeEffect: none
+		despawnEffect: none
+		hitEffect: none
+		collides: false
+		hittable: false
+		reflectable: false
+		absorbable: false
+		width: 0
+		height: 0
+		damage: 0
+		splashDamage: 0
+		splashDamageRadius: 0
+		knockback: 0
+		shrinkX: 0
+		shrinkY: 0
+		lightRadius: 0
+		lightOpacity: 0
+		lightColor: ffffff
+		hitShake: 0
+		despawnShake: 0
+		despawnUnit: twotimepun
+		speed: 0
+		}
+
+
+
+
+	}
+}
+]
+
+isEnemy: true
+accel: 0.2
+drag: 0.1
+speed: 2.3
+drawCell: false
+
+
+
+abilities: [
+  {
+    type: RegenAbility
+    amount: 0.0016
+  }
+]
+
+

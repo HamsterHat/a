@@ -1,0 +1,87 @@
+type: mech
+name: "[sky]Пуника"
+alwaysUnlocked: true
+armor: 8
+outlines: false
+health: 75
+range: 90
+rotateMoveFirst: false
+rotateSpeed: 3
+hitSize: 8
+canDrown: false
+stepShake: 0
+
+description: "[sky]Выжившая класса Страж и исследователь кода.[] Пунь-версия Джейн Доу. Одержима спасением своего заражённого мужа Джонни Пуни."
+
+
+
+
+weapons: [
+{
+reload: 1800
+x: 4
+y: 4
+mirror: false
+rotate: false
+inaccuracy: 0
+useAmmo: false
+shootSound: throw
+shootStatus: overclock
+shootStatusDuration: 120
+bullet: {
+		type: BasicBulletType
+		damage: 15
+		speed: 4
+		splashDamage: 45
+		splashDamageRadius: 46
+		absorbable: true
+		lifetime: 22.5
+		pierce: false
+		hitEffect: instBomb
+		shootEffect: none
+		smokeEffect: none
+		despawnEffect: none
+		knockback: 9.89
+		status: mod-blind
+		statusDuration: 300
+		hitSound: bang
+		spin: 4
+		scaleLife: true
+		fragBullets: 1
+		sprite: mod-flash
+		fragBullet: {
+			type: BulletType
+			lifetime: 1
+			hittable: false
+			instantDisappear: true
+			damage: 0
+			collides: false
+			reflectable: false
+			splashDamage: 0
+			splashDamageRadius: 46
+			speed: 0
+			hitSound: explosion
+			status: mod-stun
+			statusDuration: 140
+		}
+
+}
+}
+]
+
+isEnemy: true
+accel: 0.2
+drag: 0.1
+speed: 2.5
+drawCell: false
+
+
+
+abilities: [
+  {
+    type: RegenAbility
+    amount: 0.0033333333333333335
+  }
+]
+
+

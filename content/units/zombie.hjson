@@ -1,0 +1,67 @@
+type: mech
+name: "[green]Зомби"
+alwaysUnlocked: true
+armor: 6
+outlines: false
+health: 35
+range: 8
+rotateMoveFirst: false
+rotateSpeed: 3
+hitSize: 8
+canDrown: false
+stepShake: 0
+
+
+isEnemy: true
+accel: 0.2
+drag: 0.1
+speed: 0.4
+drawCell: false
+
+
+
+weapons: [
+{
+reload: 0
+x: 0
+y: 0
+mirror: false
+rotate: false
+inaccuracy: 0
+useAmmo: false
+shootSound: splash
+alwaysShooting: true
+bullet: {
+		type: BulletType
+		damage: 0
+		width: 1
+		height: 1
+		speed: 0
+		splashDamage: 0
+		splashDamageRadius: 16
+		absorbable: true
+		lifetime: 0
+		pierce: false
+		hitEffect: none
+		shootEffect: none
+		smokeEffect: none
+		despawnEffect: none
+		knockback: 4.7
+		impact: true
+		hitSound: splash
+		status: acid-poison
+		statusDuration: 30
+    			puddleLiquid: acid
+			puddleAmount: 15
+			puddleRange: 4
+			puddles: 1
+
+}
+}
+]
+
+
+immunities: [burning, melting, mod-melt, mod-gorenie, acid-poison]
+
+
+

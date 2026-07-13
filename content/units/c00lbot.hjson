@@ -1,0 +1,72 @@
+type: mech
+name: "[scarlet]c00lbott"
+alwaysUnlocked: true
+armor: 2
+outlines: false
+health: 5
+range: 8
+rotateMoveFirst: false
+rotateSpeed: 3
+hitSize: 8
+canDrown: false
+stepShake: 0
+
+description: "[scarlet]Горящий клон-курьер 'Доставка пиццы'.[] Оставляет за собой непрерывный след из огня, замедляет и отбрасывает выживших."
+
+
+
+
+weapons: [
+{
+reload: 4
+x: 0
+y: 0
+mirror: false
+rotate: false
+inaccuracy: 0
+useAmmo: false
+shootSound: fire
+alwaysShooting: true
+bullet: {
+		type: BulletType
+		damage: 0
+		width: 1
+		height: 1
+		speed: 0
+		splashDamage: 0
+		splashDamageRadius: 16
+		absorbable: true
+		lifetime: 8
+		pierce: false
+		hitEffect: none
+		shootEffect: none
+		smokeEffect: none
+		despawnEffect: none
+		knockback: 4.7
+		impact: true
+		hitSound: fire
+		status: slow
+		statusDuration: 30
+		makeFire: false
+		incendAmount: 1
+		incendSpread: 1
+		incendChance: 1
+
+}
+}
+]
+
+isEnemy: true
+accel: 0.2
+drag: 0.1
+speed: 0.7
+drawCell: false
+
+
+
+
+
+immunities: [burning, melting, mod-melt, mod-gorenie]
+
+
+
