@@ -1,0 +1,8 @@
+name: "c00l"
+displayName: "[lime]PUN[scarlet]SAKEN"
+"author": "[red]a[blue]l[white]ex & [orange]арсений"
+description: "Octopus Defence Addon"
+version: "KILL KILL KILL"
+minGameVersion: "136"
+dependencies: [mod]
+hidden: false
