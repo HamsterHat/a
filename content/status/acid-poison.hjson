@@ -1,0 +1,32 @@
+name: "[lime]Кислотное Отравление[]"
+damage: 0.8
+speedMultiplier: 0.6
+reloadMultiplier: 0.75
+effect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: ParticleEffect
+            particles: 6
+            lifetime: 25
+            length: 8
+            sizeFrom: 3
+            sizeTo: 0
+            colorFrom: "4df53e"
+            colorTo: "0f5705"
+            spin: 3
+          }
+          {
+            type: ParticleEffect
+            particles: 4
+            lifetime: 900
+            length: 3
+            sizeFrom: 2
+            sizeTo: 0
+            colorFrom: "4df53e"
+            colorTo: "0f5705"
+            spin: 3
+            layer: 5
+          }
+        ]
+}

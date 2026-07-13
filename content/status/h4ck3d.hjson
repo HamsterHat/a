@@ -1,0 +1,177 @@
+name: "[royal]в3л0м4н[]"
+speedMultiplier: 0.5
+healthMultiplier: 0.9
+reloadMultiplier: 0.5
+damage: 0.6
+effectChance: 0.8
+effect: {
+        type: MultiEffect
+        effects: [ 
+                {
+                type: ParticleEffect
+                particles: 3
+                region: c00l-one
+                lifetime: 600
+                length: 4
+                sizeFrom: 0
+                sizeTo: 2
+                colorFrom: 00ff73
+                colorTo: 00d9ff00
+                spin: 2
+                cone: 360
+                interp: swingOut
+                layer: 10
+                }
+                {
+                type: ParticleEffect
+                particles: 3
+                region: c00l-zero
+                lifetime: 600
+                length: 4
+                sizeFrom: 0
+                sizeTo: 2
+                colorFrom: 00ff73
+                colorTo: 00d9ff00
+                spin: 2
+                cone: 360
+                interp: swingOut
+                layer: 10
+                }
+                {
+                type: ParticleEffect
+                particles: 3
+                region: c00l-o
+                lifetime: 600
+                length: 4
+                sizeFrom: 0
+                sizeTo: 2
+                colorFrom: 00ff73
+                colorTo: 00d9ff00
+                spin: 2
+                cone: 360
+                interp: swingOut
+                layer: 10
+                }
+                {
+                type: ParticleEffect
+                particles: 3
+                region: c00l-c
+                lifetime: 600
+                length: 4
+                sizeFrom: 0
+                sizeTo: 2
+                colorFrom: 00ff73
+                colorTo: 00d9ff00
+                spin: 2
+                cone: 360
+                interp: swingOut
+                layer: 10
+                }
+                {
+                type: ParticleEffect
+                particles: 3
+                region: c00l-t
+                lifetime: 600
+                length: 4
+                sizeFrom: 0
+                sizeTo: 2
+                colorFrom: 00ff73
+                colorTo: 00d9ff00
+                spin: 2
+                cone: 360
+                interp: swingOut
+                layer: 10
+                }
+                {
+                type: ParticleEffect
+                particles: 3
+                region: c00l-p
+                lifetime: 600
+                length: 4
+                sizeFrom: 0
+                sizeTo: 2
+                colorFrom: 00ff73
+                colorTo: 00d9ff00
+                spin: 2
+                cone: 360
+                interp: swingOut
+                layer: 10
+                }
+                {
+                type: ParticleEffect
+                particles: 3
+                region: c00l-u
+                lifetime: 600
+                length: 4
+                sizeFrom: 0
+                sizeTo: 2
+                colorFrom: 00ff73
+                colorTo: 00d9ff00
+                spin: 2
+                cone: 360
+                interp: swingOut
+                layer: 10
+                }
+                {
+                type: ParticleEffect
+                particles: 3
+                region: c00l-s
+                lifetime: 600
+                length: 4
+                sizeFrom: 0
+                sizeTo: 2
+                colorFrom: 00ff73
+                colorTo: 00d9ff00
+                spin: 2
+                cone: 360
+                interp: swingOut
+                layer: 10
+                }
+                {
+                type: ParticleEffect
+                particles: 3
+                region: c00l-i
+                lifetime: 600
+                length: 4
+                sizeFrom: 0
+                sizeTo: 2
+                colorFrom: 00ff73
+                colorTo: 00d9ff00
+                spin: 2
+                cone: 360
+                interp: swingOut
+                layer: 10
+                }
+                {
+                type: ParticleEffect
+                particles: 3
+                region: c00l-g
+                lifetime: 600
+                length: 4
+                sizeFrom: 0
+                sizeTo: 2
+                colorFrom: 00ff73
+                colorTo: 00d9ff00
+                spin: 2
+                cone: 360
+                interp: swingOut
+                layer: 10
+                }
+                {
+                type: ParticleEffect
+                particles: 3
+                region: c00l-point
+                lifetime: 600
+                length: 4
+                sizeFrom: 0
+                sizeTo: 2
+                colorFrom: 00ff73
+                colorTo: 00d9ff00
+                spin: 2
+                cone: 360
+                interp: swingOut
+                layer: 10
+                }
+        ]
+}
+

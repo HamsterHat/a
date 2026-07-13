@@ -1,0 +1,21 @@
+name: "[scarlet]Кровотечение[]"
+speedMultiplier: 0.8
+healthMultiplier: 0.9
+reloadMultiplier: 0.9
+damage: 0.06
+effectChance: 0.1
+effect: {
+        type: ParticleEffect
+        particles: 1
+        lifetime: 900
+        length: 0
+        sizeFrom: 4
+        sizeTo: 0
+        colorFrom: d11b1b
+        colorTo: 7c0f0f
+        spin: 0
+        cone: 360
+        interp: linear
+        layer: 5
+}
+               

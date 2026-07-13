@@ -1,0 +1,7 @@
+name: "[red]ЯРОСТЬ[]"
+speedMultiplier: 1.4
+healthMultiplier: 2.75
+reloadMultiplier: 2
+damage: -999
+effectChance: 0
+effect: none

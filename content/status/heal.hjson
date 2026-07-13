@@ -1,0 +1,15 @@
+name: "[green]Лечение"
+damage: -1
+effect: {
+                type: ParticleEffect
+                particles: 3
+                region: c00l-glitch
+                lifetime: 600
+                length: 1
+                sizeFrom: 2
+                sizeTo: 0
+                colorFrom: 00ffff
+                colorTo: 001100
+                spin: 2
+                layer: 5
+        }
