@@ -1,3 +1,127 @@
+let pun00N7clone = extend(UnitType, "00punN7clone", {
+  alwaysUnlocked: true,
+  outlines: false,
+  drawCell: false,
+
+  health: 110,
+  armor: 0,
+  hitSize: 8,
+  canDrown: false,
+  isEnemy: true,
+
+  speed: 2.4,
+  accel: 0.2,
+  drag: 0.1,
+  range: 8,
+  rotateMoveFirst: false,
+  rotateSpeed: 3,
+  stepShake: 0
+});
+
+pun00N7clone.constructor = () => MechUnit.create();
+
+
+
+let invisibilityMarker = extend(StatusEffect, "invisibility-marker", {
+  localizedName: "Невидимость",
+
+  damageMultiplier: 1,
+  speedMultiplier: 2,
+  reloadMultiplier: 1,
+  buildSpeedMultiplier: 1,
+  healthMultiplier: 1,
+
+  effect: Fx.none
+});
+
+
+let sky00punN7 = extend(UnitType, "00punN7", {
+  alwaysUnlocked: true,
+  armor: 0,
+  outlines: false,
+  health: 110,
+  range: 8,
+  rotateMoveFirst: false,
+  rotateSpeed: 3,
+  hitSize: 8,
+  canDrown: false,
+  stepShake: 0,
+  isEnemy: true,
+  accel: 0.2,
+  drag: 0.1,
+  speed: 2.4,
+  drawCell: false
+});
+
+
+sky00punN7.constructor = () => extend(MechUnit, {
+  draw() {
+    if (this.hasStatus(invisibilityMarker)) {
+      
+      if (Vars.player.unit() === this) {
+        this.super$draw();
+      }
+      
+      return;
+    }
+    this.super$draw();
+  }
+});
+
+
+sky00punN7.abilities.add(new RegenAbility(0.0016666666666666668));
+
+let weapon1 = extend(Weapon, {
+  reload: 3600,
+  x: 0,
+  y: 0,
+  mirror: false,
+  alternate: false,
+  rotate: false,
+  inaccuracy: 0,
+  useAmmo: false,
+  shootStatus: invisibilityMarker,
+  shootStatusDuration: 600,
+  shootSound: Sounds.none
+});
+
+let bullet1 = extend(BasicBulletType, {
+  shootEffect: Fx.none,
+  smokeEffect: Fx.none,
+  despawnEffect: Fx.none,
+  hitEffect: Fx.none,
+  collides: false,
+  hittable: false,
+  reflectable: false,
+  absorbable: false,
+  width: 0,
+  height: 0,
+  lifetime: 2,
+  speed: 0.1,
+  damage: 0,
+  splashDamage: 0,
+  splashDamageRadius: 0,
+  knockback: 0,
+  shrinkX: 0,
+  shrinkY: 0,
+  lightRadius: 0,
+  lightOpacity: 0,
+  hitShake: 0,
+  despawnShake: 0,
+  recoil: 3
+});
+
+bullet1.spawnUnit = pun00N7clone;
+
+weapon1.bullet = bullet1;
+
+
+
+sky00punN7.weapons.add(weapon1);
+
+
+
+
 let coruptMarker = null;
 let glitchTimer = 0;
 
