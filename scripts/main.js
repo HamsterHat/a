@@ -1,4 +1,4 @@
-let pun00N7clone = extend(UnitType, "00cloneN7", {
+let pun00N7clone = extend(UnitType, "00clone7", {
   alwaysUnlocked: true,
   outlines: false,
   drawCell: false,
@@ -72,7 +72,6 @@ sky00punN7.constructor = () => extend(MechUnit, {
 });
 
 
-sky00punN7.abilities.add(new RegenAbility(0.0016666666666666668));
 
 let weapon = extend(Weapon, {
   reload: 3600,
