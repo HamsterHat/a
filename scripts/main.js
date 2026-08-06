@@ -117,11 +117,11 @@ let bullet = extend(BasicBulletType, {
 });
 
 
-weapon.bullet = bullet1;
+weapon.bullet = bullet;
 
 
 
-sky00punN7.weapons.add(weapon1);
+sky00punN7.weapons.add(weapon);
 
 
 
