@@ -74,7 +74,7 @@ sky00punN7.constructor = () => extend(MechUnit, {
 
 sky00punN7.abilities.add(new RegenAbility(0.0016666666666666668));
 
-let weapon1 = extend(Weapon, {
+let weapon = extend(Weapon, {
   reload: 3600,
   x: 0,
   y: 0,
@@ -85,10 +85,11 @@ let weapon1 = extend(Weapon, {
   useAmmo: false,
   shootStatus: invisibilityMarker,
   shootStatusDuration: 600,
+  shootCone: 360,
   shootSound: Sounds.none
 });
 
-let bullet1 = extend(BasicBulletType, {
+let bullet = extend(BasicBulletType, {
   shootEffect: Fx.none,
   smokeEffect: Fx.none,
   despawnEffect: Fx.none,
@@ -111,12 +112,13 @@ let bullet1 = extend(BasicBulletType, {
   lightOpacity: 0,
   hitShake: 0,
   despawnShake: 0,
-  recoil: 3
+  recoil: 3,
+  despawnHit: true,
+  spawnUnit: pun00N7clone
 });
 
-bullet1.spawnUnit = pun00N7clone;
 
-weapon1.bullet = bullet1;
+weapon.bullet = bullet1;
 
 
 
