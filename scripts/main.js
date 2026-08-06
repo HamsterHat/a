@@ -1,4 +1,4 @@
-let pun00N7clone = extend(UnitType, "00punN7clone", {
+let pun00N7clone = extend(UnitType, "00cloneN7", {
   alwaysUnlocked: true,
   outlines: false,
   drawCell: false,
@@ -56,14 +56,17 @@ let sky00punN7 = extend(UnitType, "00punN7", {
 
 sky00punN7.constructor = () => extend(MechUnit, {
   draw() {
-    if (this.hasStatus(invisibilityMarker)) {
+    if (this.hasEffect(invisibilityMarker)) {
       
       if (Vars.player.unit() === this) {
-        this.super$draw();
+        Draw.color(Color.valueOf("00ffff"), 0.5);
+        Draw.rect("circle-bullet", this.x, this.y, 8, 8);
+        Draw.reset();
       }
       
       return;
     }
+    
     this.super$draw();
   }
 });
