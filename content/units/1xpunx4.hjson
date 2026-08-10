@@ -107,7 +107,7 @@ shootStatusDuration: 999
 				collides: false
 				reflectable: false
 				splashDamage: 0
-				splashDamageRadius: 9999999999999
+				splashDamageRadius: 8000
 				splashDamagePierce: true
 				speed: 0
 				hitSound: bang
