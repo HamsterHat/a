@@ -96,8 +96,8 @@ rotate: false
 inaccuracy: 0
 useAmmo: false
 shootSound: bang
-shootStatus: fast
-shootStatusDuration: 120
+shootStatus: unst
+shootStatusDuration: 999
 	bullet: {
 				type: BulletType
 				lifetime: 1
