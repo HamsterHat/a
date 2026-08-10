@@ -563,3 +563,44 @@ Events.run(Trigger.draw, () => {
 
     Draw.reset();
 });
+
+
+
+
+
+let trackedMarker = null;
+
+Events.on(ClientLoadEvent, () => {
+    trackedMarker = Vars.content.getByName(ContentType.status, "c00l-tracked") || 
+                     Vars.content.statusEffects().find(s => s.name.includes("tracked"));
+
+    if(trackedMarker){
+        Log.info(">>> [STATUS] Tracked found: " + trackedMarker.name);
+    } else {
+        Log.err(">>> [STATUS] Tracked NOT FOUND. Check Hjson.");
+    }
+});
+
+
+
+Events.run(Trigger.draw, () => {
+    if(!trackedMarker) return;
+    Groups.unit.each(unit => {
+        if(unit.hasEffect(trackedMarker)){
+            Draw.z(200);
+
+            Draw.color(Color.valueOf("ffec45"), 0.65);
+            Draw.rect(unit.type.fullIcon, unit.x, unit.y, unit.rotation - 90);
+
+            Draw.blend(Blending.additive);
+            Draw.color(Color.valueOf("ffc04a"), 0.3);
+            Draw.rect(unit.type.fullIcon, unit.x, unit.y, unit.rotation - 90);
+            
+            Draw.color(Color.white, 0.1);
+            Draw.rect(unit.type.fullIcon, unit.x, unit.y, unit.rotation - 90);
+
+            Draw.blend();
+            Draw.reset();
+        }
+    });
+});
