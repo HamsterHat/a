@@ -608,28 +608,4 @@ Events.run(Trigger.draw, () => {
 
 
 
-let unstMarker = null;
 
-Events.on(ClientLoadEvent, () => {
-    unstMarker = Vars.content.getByName(ContentType.status, "c00l-unst") || 
-                 Vars.content.statusEffects().find(s => s.name.includes("unst"));
-});
-
-Events.run(Trigger.draw, () => {
-    if(!unstMarker) return;
-
-    let me = Vars.player.unit();
-    if(!me || !me.hasEffect(unstMarker)) return;
-
-    Groups.unit.each(other => {
-        if(me.id === other.id || other.team === me.team) return;
-
-        Draw.z(250);
-        Draw.color(Color.red, 0.6);
-        Lines.stroke(1.2);
-
-        Lines.line(me.x, me.y, other.x, other.y);
-
-        Draw.reset();
-    });
-});
