@@ -107,11 +107,12 @@ shootStatusDuration: 120
 				collides: false
 				reflectable: false
 				splashDamage: 0
-				splashDamageRadius: 9999999999
+				splashDamageRadius: 9999999999999
+				splashDamagePierce: true
 				speed: 0
 				hitSound: bang
-				status: mod-stun
-				statusDuration: 195
+				status: tracked
+				statusDuration: 999
 				despawnHit: true
 				hitEffect: {
 					type: MultiEffect
@@ -128,7 +129,7 @@ shootStatusDuration: 120
 						}
 						{
 						type: WaveEffect
-						delay: 20
+						startDelay: 20
 						colorFrom: 000000
 						colorTo: 004d00
 						sizeFrom: 0
@@ -139,7 +140,7 @@ shootStatusDuration: 120
 						}
 						{
 						type: WaveEffect
-						delay: 40
+						startDelay: 40
 						colorFrom: 00ff00
 						colorTo: 000000
 						sizeFrom: 0
@@ -150,7 +151,7 @@ shootStatusDuration: 120
 						}
 						{
 						type: WaveEffect
-						delay: 60
+						startDelay: 60
 						colorFrom: 000000
 						colorTo: 1a0000
 						sizeFrom: 0
@@ -161,7 +162,7 @@ shootStatusDuration: 120
 						}
 						{
 						type: WaveEffect
-						delay: 80
+						startDelay: 80
 						colorFrom: ff0000
 						colorTo: 000000
 						sizeFrom: 0
@@ -172,7 +173,7 @@ shootStatusDuration: 120
 						}
 						{
 						type: WaveEffect
-						delay: 100
+						startDelay: 100
 						colorFrom: 000000
 						colorTo: 00ff00
 						sizeFrom: 0
@@ -183,7 +184,7 @@ shootStatusDuration: 120
 						}
 						{
 						type: WaveEffect
-						delay: 120
+						startDelay: 120
 						colorFrom: 00cc00
 						colorTo: 000000
 						sizeFrom: 0
@@ -194,7 +195,7 @@ shootStatusDuration: 120
 						}
 						{
 						type: WaveEffect
-						delay: 140
+						startDelay: 140
 						colorFrom: 000000
 						colorTo: 003300
 						sizeFrom: 0
@@ -205,7 +206,7 @@ shootStatusDuration: 120
 						}
 						{
 						type: WaveEffect
-						delay: 160
+						startDelay: 160
 						colorFrom: 00ff00
 						colorTo: 000000
 						sizeFrom: 0
@@ -216,7 +217,7 @@ shootStatusDuration: 120
 						}
 						{
 						type: WaveEffect
-						delay: 180
+						startDelay: 180
 						colorFrom: 000000
 						colorTo: 330000
 						sizeFrom: 0
@@ -227,7 +228,7 @@ shootStatusDuration: 120
 						}
 						{
 						type: WaveEffect
-						delay: 200
+						startDelay: 200
 						colorFrom: ff0000
 						colorTo: 000000
 						sizeFrom: 0
@@ -238,7 +239,7 @@ shootStatusDuration: 120
 						}
 						{
 						type: WaveEffect
-						delay: 220
+						startDelay: 220
 						colorFrom: ffffff
 						colorTo: 000000
 						sizeFrom: 0
