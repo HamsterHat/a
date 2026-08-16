@@ -587,7 +587,7 @@ Events.run(Trigger.draw, () => {
     if(!trackedMarker) return;
     Groups.unit.each(unit => {
         if(unit.hasEffect(trackedMarker)){
-            Draw.z(200);
+            Draw.z(158);
 
             Draw.color(Color.valueOf("ffec45"), 0.65);
             Draw.rect(unit.type.fullIcon, unit.x, unit.y, unit.rotation - 90);
