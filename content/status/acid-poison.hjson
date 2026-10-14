@@ -5,6 +5,7 @@ reloadMultiplier: 0.75
 effect: {
         type: MultiEffect
         effects: [
+          corrosionVapor,
           {
             type: ParticleEffect
             particles: 6
