@@ -1,0 +1,325 @@
+type: mech
+name: "[white]Генри Эскапист"
+alwaysUnlocked: true
+armor: 4
+outlines: false
+health: 1200
+range: 8
+rotateMoveFirst: false
+rotateSpeed: 3
+hitSize: 8
+canDrown: false
+stepShake: 0
+// loopSound: cool-theme TODO
+loopSoundVolume: 1
+
+
+
+
+
+
+
+weapons: [
+{
+reload: 120
+x: 4
+y: 4
+mirror: false
+rotate: false
+inaccuracy: 0
+useAmmo: false
+shootSound: slash
+bullet: {
+		type: BulletType
+		damage: 12
+		width: 1
+		height: 1
+		speed: 0
+		splashDamage: 9
+		splashDamageRadius: 16
+		absorbable: true
+		lifetime: 0
+		pierce: false
+		hitEffect: none
+		shootEffect: none
+		smokeEffect: none
+		despawnEffect: none
+		knockback: 4.7
+		impact: true
+		hitSound: hit
+		status: slow
+		statusDuration: 30
+		recoil: -1
+}
+}
+
+
+
+{
+name: mark-and-recall
+reload: 1200
+x: 0
+y: 0
+mirror: false
+rotate: false
+shootSound: track
+continuous: false
+alternate: false
+inaccuracy: 0
+useAmmo: false
+bullet: {
+		type: BulletType
+		damage: 0
+		splashDamage: 0
+		splashDamageRadius: 0
+		lifetime: 0
+
+
+      shootEffect: {
+          type: SeqEffect
+            followParent: false
+            rotWithParent: false
+          effects: [
+                  {
+        							type: ParticleEffect
+                        region: mark
+        							particles: 1
+        							sizeFrom: 0
+        							sizeTo: 64
+        							lifetime: 30
+        							layer: 119
+                        interp: pow5Out
+        						}
+                    {
+        							type: ParticleEffect
+                        region: mark
+        							particles: 1
+        							sizeFrom: 64
+        							sizeTo: 0
+        							lifetime: 30
+        							layer: 119
+        						}
+            
+                  {
+        							type: ParticleEffect
+        							particles: 1
+        							sizeFrom: 1
+        							sizeTo: 1
+        							colorFrom: ffffff00
+        							colorTo: ffffff00
+        							lifetime: 810
+        							layer: 1
+        						}
+          
+                    {
+        							type: ParticleEffect
+                        region: recall
+        							particles: 1
+        							sizeFrom: 0
+        							sizeTo: 64
+        							lifetime: 30
+        							layer: 119
+                        interp: pow5Out
+        						}
+                    {
+        							type: ParticleEffect
+                        region: recall
+        							particles: 1
+        							sizeFrom: 64
+        							sizeTo: 0
+        							lifetime: 30
+        							layer: 119
+        						}
+          ]
+        }
+
+      
+		fragBullets: 1
+		fragBullet: {
+      type: BulletType
+				shootEffect: none
+				damage: 0
+				lifetime: 900
+				smokeEffect: none
+				despawnEffect: none
+
+				hitEffect: {
+					type: MultiEffect
+					effects: [
+						{
+							type: ParticleEffect
+							particles: 1
+							region: circle-shadow
+							sizeFrom: 128
+							sizeTo: 0
+							colorFrom: ffffffff
+							colorTo: ffffffff
+							interp: circleOut
+							lifetime: 24
+							layer: 119
+						}
+						{
+							type: ParticleEffect
+							particles: 18
+							sizeFrom: 24
+							sizeTo: 0
+							colorFrom: 2b2a29
+							colorTo: 7a7a7a
+							interp: circleOut
+							lifetime: 540
+							length: 85
+							layer: 118
+						}
+						{
+							type: ParticleEffect
+							particles: 18
+							sizeFrom: 16
+							sizeTo: 0
+							colorFrom: 1f1f1f
+							colorTo: 6d6d6d
+							interp: circleOut
+							lifetime: 590
+							length: 90
+							layer: 118.1
+						}
+						{
+							type: ParticleEffect
+							particles: 32
+							sizeFrom: 5
+							sizeTo: 0
+							colorFrom: 582612
+							colorTo: 582612
+							interp: circleOut
+							lifetime: 110
+							length: 160
+							layer: 81
+						}
+						{
+							type: ParticleEffect
+							particles: 32
+							sizeFrom: 8
+							sizeTo: 0
+							colorFrom: 582612
+							colorTo: 582612
+							interp: circleOut
+							lifetime: 110
+							length: 190
+							layer: 81
+						}
+						{
+							type: ParticleEffect
+							particles: 9
+							colorFrom: fffc61
+							colorTo: 5f3737
+							interp: circleOut
+							lifetime: 210
+							line: true
+							length: 180
+							layer: 117
+						}
+						{
+							type: WaveEffect
+							lifetime: 60
+							sizeFrom: 0
+							sizeTo: 160
+							lightColor: 66B1FFFF
+							interp: circleOut
+							strokeFrom: 20
+							strokeTo: 0
+							colorFrom: 757575c7
+							colorTo: 75757556
+							layer: 5
+							clip: 900
+						}
+					]
+				}
+				collides: false
+				hitSound: thermoBoom
+				hitSoundVolume: 8
+				hittable: false
+				reflectable: false
+				absorbable: false
+				width: 0
+				height: 0
+				splashDamage: 75
+				splashDamageRadius: 60
+				status: mod-stun
+				statusDuration: 200
+				knockback: 0
+				shrinkX: 0
+				shrinkY: 0
+				lightRadius: 0
+				lightOpacity: 0
+				lightColor: ffffff
+				hitShake: 0
+				despawnShake: 0
+				speed: 0
+				buildingDamageMultiplier: 2.75
+				fragBullets: 3
+				fragBullet: fireball
+
+
+
+
+
+          spawnBullets: [
+			{
+				type: BulletType
+				lifetime: 1
+				hittable: false
+				instantDisappear: true
+				damage: 0
+				collides: false
+				reflectable: false
+				splashDamage: 9
+				splashDamageRadius: 9
+				speed: 0
+				hitSound: none
+				status: mod-blind
+				statusDuration: 120
+			}
+			{
+				type: BulletType
+				lifetime: 1
+				hittable: false
+				instantDisappear: true
+				damage: 0
+				collides: false
+				reflectable: false
+				splashDamage: 9
+				splashDamageRadius: 9
+				speed: 0
+				hitSound: none
+				status: slow
+				statusDuration: 999
+			}
+		]
+
+      
+          
+		}
+
+
+
+		}
+}
+}
+]
+
+isEnemy: true
+accel: 0.3
+drag: 0.2
+speed: 2.4
+drawCell: false
+
+
+
+abilities: [
+  {
+    type: RegenAbility
+    amount: 0.025
+  }
+]
+
+
+immunities: [burning, melting, mod-melt, mod-gorenie]
