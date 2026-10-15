@@ -2,10 +2,10 @@ type: missile
 controller: groundAI
 name: "[yellow]Пицца Пиццуня"
 speed: 0
-hitSize: 8
+hitSize: 4
 hidden: false
-health: 15
-armor: 2
+health: 20
+armor: 0
 loopSound: none
 loopSoundVolume: 1
 outlines: false
