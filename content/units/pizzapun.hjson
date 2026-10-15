@@ -51,6 +51,7 @@ bullet: {
 		lightColor: ffffff
 		hitShake: 0
 		despawnShake: 0
+		despawnUnit: pizza
 }
 }
 ]
