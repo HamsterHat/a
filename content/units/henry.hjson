@@ -82,19 +82,19 @@ bullet: {
           effects: [
                   {
         							type: ParticleEffect
-                        region: mark
+                        region: c00l-mark
         							particles: 1
         							sizeFrom: 0
-        							sizeTo: 64
+        							sizeTo: 32
         							lifetime: 30
         							layer: 119
                         interp: pow5Out
         						}
                     {
         							type: ParticleEffect
-                        region: mark
+                        region: c00l-mark
         							particles: 1
-        							sizeFrom: 64
+        							sizeFrom: 32
         							sizeTo: 0
         							lifetime: 30
         							layer: 119
@@ -107,25 +107,34 @@ bullet: {
         							sizeTo: 1
         							colorFrom: ffffff00
         							colorTo: ffffff00
-        							lifetime: 810
+        							lifetime: 780
         							layer: 1
         						}
+
+					{
+						type: SoundEffect
+						sound: track
+						minPitch: 1	
+						maxPitch: 1
+						effect: none
+						lifetime: 0
+					}
           
                     {
         							type: ParticleEffect
-                        region: recall
+                        region: c00l-recall
         							particles: 1
         							sizeFrom: 0
-        							sizeTo: 64
+        							sizeTo: 32
         							lifetime: 30
         							layer: 119
                         interp: pow5Out
         						}
                     {
         							type: ParticleEffect
-                        region: recall
+                        region: c00l-recall
         							particles: 1
-        							sizeFrom: 64
+        							sizeFrom: 32
         							sizeTo: 0
         							lifetime: 30
         							layer: 119
