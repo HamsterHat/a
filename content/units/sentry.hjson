@@ -46,36 +46,12 @@ shootY: 12
 			lifetime: 15
 			status: slow
 			statusDuration: 60
+			knockback: 0.8
 		}
 }
 ]
 
 
 
-abilities: [
-  {
-type: EnergyFieldAbility
-damage: 55
-reload: 120
-range: 50
-healEffect: heal
-hitEffect: none	
-damageEffect: heal	
-status: slow
-shootSound: heal
-statusDuration: 30
-maxTargets: 999999
-healPercent: 4
-sameTypeHealMult: 1
-displayHeal: true
-blinkScl: 0
-blinkSize: 0
-effectRadius: 0
-sectorRad: 0
-rotateSpeed: 0
-sectors: 0	
-color: #4df53e
-useAmmo: false
-}
-]
+
 
