@@ -36,18 +36,18 @@ targetable: false
 abilities: [
   	{
 		type: EnergyFieldAbility
-		damage: 12
+		damage: 0
 		reload: 5
-		range: 50
-		healEffect: heal
+		range: 100
+		healEffect: none
 		hitEffect: none	
 		damageEffect: none
 		status: slow
-		shootSound: flame
+		shootSound: none
 		statusDuration: 30
 		maxTargets: 999999
-		healPercent: 0.4166666666666667
-		sameTypeHealMult: 1
+		healPercent: 0
+		sameTypeHealMult: 0
 		displayHeal: true
 		blinkScl: 0
 		blinkSize: 0
