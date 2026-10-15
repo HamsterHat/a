@@ -10,7 +10,7 @@ rotateSpeed: 3
 hitSize: 8
 canDrown: false
 stepShake: 0
-// loopSound: cool-theme TODO
+loopSound: henry-theme
 loopSoundVolume: 1
 
 
